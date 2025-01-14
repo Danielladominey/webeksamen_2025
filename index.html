@@ -10,8 +10,8 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="img/fav.png" id="logo"></a>
-            <ul>
+            <a href="index.html"><img src="img/fav.png" id="logo1" alt="logo"></a>
+            <ul id="mobilefirstnav">
                 <li>
                    <a href="order.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
                 </li>
@@ -22,16 +22,34 @@
                     <a href=""><i class="fa-solid fa-bars"></i></a>
                 </li>
             </ul>
+
+            <!--Header til desktop, som er gjemt i mobil-->
+                    <ul id="desktopnav">
+                        <li>
+                            <a href="order.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                         </li>
+                         <a href="#" class="bluenav"><li>Opprett en konto</li></a>
+                         <a href="#" class="bluenav"><li><i class="fa-regular fa-user" id="user2"></i>Min side</li></a>
+                    </ul>
+                    
+        
+                    <a href="index.html"><img src="img/fav.png" id="logo2" alt="logo"></a>
+                    <ul id="desktopnav2">
+                        <a href="#"><li>Tips og inspirasjon</li></a>
+                        <a href="#"><li>Hotell</li></a>
+                        <a href="#"><li>Fly</li></a>
+                        <a href="#"><li>Kontakt</li></a>
+                    </ul> 
+            
         </nav>
     </header>
 
     <main>
-        <article>
-            <img src="img/sea-4768869_1920.jpg">
-        </article>
 
-        <section>
-            <ul>
+        <img src="img/sea-4768869_1920.jpg" alt="Sea blue water" id="bluewaters">
+
+        <section id="index-one">
+            <ul id="scrollul">
                 <li>
                     <a href=""><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
                 </li>
@@ -49,10 +67,201 @@
                 </li>
             </ul>
 
-            <form></form>
+            <form action ="" method="POST">
+                <article class="formflex">
+                    <label for="from">Fra</label>
+                    <select id="fra">
+                     <option value="1">Oslo Lufthavn</option>
+                     <option value="2">Torp Sandefjord Lufthavn</option>
+                     <option value="3">Bergen Lufthavn</option>
+                     <option value="4">Alta Lufthavn</option>
+                    </select>
+                </article>
+                 
+                <article class="formflex">
+                    <label for="to">Til</label>
+                    <select id="til">
+                     <option value="1">Albania</option>
+                     <option value="2">Danmark</option>
+                     <option value="3">Finland</option>
+                     <option value="4">Hellas</option>
+                    </select>  
+                </article>
+               
+                <article class="formflex">
+                    <label for="time">Reiselenge</label>
+                    <select id="reiselengde">
+                     <option value="1">Mindre enn 1 uke</option>
+                     <option value="2">1 uke</option>
+                     <option value="3">2 uker</option>
+                     <option value="4">Mer enn 2 uker</option>
+                    </select> 
+                </article>
+                
+                <article class="formflex">
+                    <label for="date">Velg dato</label>
+                    <input type="date" id="dato" required> 
+                   </div>
+                </article>
+                
+                <article class="formflex">
+                     <!-- https://stackoverflow.com/questions/26003148/change-the-increment-value-of-html-number-input-decimals-->
+                    <label for="quantity">Reisende</label>
+                    <input type="number" id="antall" min="1" max="15" step="1" required>
+                </article>
+               
+
+               <button>Søk</button>
+            </form>
+        </section>
+
+
+        <section id="index-two">
+            <img src="img/holiday-2733322_1280.jpg" alt="Woman in pool" id="womanpool">
+            <article>
+                <h2>Bestill sommerens beste uke</h1>
+                <p>Fly + hotell, 7 dager</p>
+                <p class="thick">Fra 3298,-</p>
+            </article>
+            <button>Bestill i dag</button>
+        </section>
+
+        <section id="index-three">
+            <article>
+                <h3>Få ekslusive tilbud</h3>
+                <a href="#">Logg inn/opprett konto og få rabattkoder<i class="fa-solid fa-angles-right"></i></a>
+            </article>
+
+            <article>
+                <h3>Billige restplasser</h3>
+                <a href="#">Opptil 50% rabatt <i class="fa-solid fa-angles-right"></i></a>
+            </article>
+
+            <article>
+                <h3>Mars - spar opptil 5000,-</h3>
+                <a href="#">Sikre deg et ferie kupp <i class="fa-solid fa-angles-right"></i></a>
+            </article>   
+        </section>
+
+        <section id="index-four">
+            <h2>Tips & inspirasjon</h2>
+
+            <article>
+                <img src="img/beach-6514331_640.jpg" alt="greek island">
+                <h4 class="overlayh4">Ukens Deal</h4>
+                <h3>Greske favoritter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at elit eget purus vest</p>
+                <a href><p>Fra kr 3 970</p></a>
+            </article>
+
+            <article>
+                <img src="img/beach-1836467_640.jpg" alt="people playing in the water at beach">
+                <h3>Solskinnspriser - bestill i dag!</h3>
+                <p>ras sapien massa, tincidunt sed feugiat id, iaculis non mauris.</p>
+                <a href><p>Fra kr 3 203</p></a>
+            </article>
+
+            <article>
+                <img src="img/cathedral-427997_640.jpg" alt="cathedral in big town">
+                <h3>Storbyferie</h3>
+                <p>Donec euismod condimentum felis, sit amet efficitur enim condimentum vitae. Praesent eu enim vulputate, mattis ante non.</p>
+                <a href><p>Les mer</p></a>
+            </article>
+
+            <article>
+                <img src="img/building-7014904_640.jpg" alt="london bridge">
+                <h3>Besøk påskefavoritten London</h3>
+                <p>Aliquam ante ipsum, pellentesque at nibh a, pharetra semper purus. Cras id feugiat est, eu porttitor eros. </p>
+                <a href><p>Fra kr 2 150</p></a>
+            </article>
+
+            <article>
+                <img src="img/ski-slope-3223709_640.jpg" alt="person skiing">
+                <h4 class="overlayh4">Nyhet</h4>
+                <h3>Greske favoritter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at elit eget purus vest</p>
+                <a href><p>Se alle skistedene</p></a>
+            </article>
+            
+            <article>
+                <img src="img/beach-666122_640.jpg" alt="beach hut with blue water around">
+                <h3>Spar opptil 7000,- til sommer</h3>
+                <p>Aliquam ante ipsum, pellentesque at nibh a, pharetra semper purus. Cras id feugiat est, eu porttitor eros. </p>
+                <a href><p>Les mer</p></a>
+            </article>
+        </section>  
+    </main>
+
+    <footer>
+        <section id="flags">
+            <article>
+                <img src="flags/sweden.png">
+                <p>Sverige</p>
+            </article>
+            <article>
+                <img src="flags/denmark.png">
+                <p>Danmark</p>
+            </article>
+            <article>
+                <img src="flags/norway.png">
+                <p>Sverige</p>
+            </article>
+            <article>
+                <img src="flags/material.png">
+                <p>Suomi</p>
+            </article>
+            <article>
+                <img src="flags/netherlands.png">
+                <p>Nederland</p>
+            </article>
         </section>
         
-    </main>
+        <section id="pay">
+            <h4>Betalingsmetoder</h3>
+            <ul>
+                <a href="#"><li><i class="fa-brands fa-cc-visa"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-cc-mastercard"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-cc-paypal"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-cc-apple-pay"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-cc-amazon-pay"></i></li></a>
+            </ul>
+        </section>
+        
+        
+        <section id="sub">
+            <h4>Nyheter & tilbud</h4>
+            <p>Meld deg på nyhetsbrev her</p>
+            <form action="#" method="POST">
+               <input type="email" id="email1" name="email" placeholder="ola@example.com...">
+               <button type="submit">Send</button>
+            </form>
+        </section> 
+
+        <a href="#" id="present">Kjøp reisegavekort</a>
+
+
+        <section id="service">
+            <h4>Kundeservice</h4>
+            <ul>
+                <a href="#"><li>Spørsmål og svar</li></a>
+                <a href="#"><li>Chat</li></a>
+                <a href="#"><li>Kontakt</li></a>
+                <a href="#"><li>Tilgjengelighetserklæring</li></a>
+            </ul>
+        </section>
+
+        <section id="some">
+            <h4>Sosiale medier</h4>
+            <ul>
+                <a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></li></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></li></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></li></a>
+            </ul>
+        </section>
+        
+    </footer>
     
 </body>
 </html>
