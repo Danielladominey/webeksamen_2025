@@ -78,6 +78,8 @@ header {
 main {
     max-width: 1000px;
 
+
+    /*Index css*/
     #bluewaters{
         width: 100%;
         height: 200px;
@@ -85,7 +87,7 @@ main {
     }
 
     #womanpool{
-        width: 100vw;
+        width: 100%;
     }
 
     #index-one{
@@ -232,22 +234,26 @@ main {
 
     #index-three {
         width: fit-content;
+        outline: 2px solid red;
         display: flex;
-        gap: 20px;
-        padding-bottom: 10%;
-        overflow-x: scroll;
+        overflow-x: auto;
+        padding: 0%;
         scroll-snap-type: x mandatory;
-        scrollbar-width: thin;
-        -ms-overflow-style: none;
-    }
+        
+    }   
 
     #index-three article {
-        flex: 0 0 80%;
-        width:fit-content;
+        outline: 2px solid blue;
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+        width: 50;
         border: 1px solid rgba(221, 221, 221, 0.5);
-        padding: 5%;
         border-radius: 10px;
     }
+
+    
+  
+
 
     #index-three a{
         font-size: 15px;
@@ -308,15 +314,141 @@ main {
         position: absolute;
         top: -21px;
         left: 0px;
-        width: 20%;
+        width: fit-content;
         padding: 3%;
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
         background-color: var(--mediumblue);
         color: var(--white);
     }
-}
 
+
+    /*order main css*/
+
+    #order-one {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smoooth;
+        width: 100%;
+        height: 50vh;
+    }
+
+    #order-one img {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    #order-one-ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+        padding-top: 10%;
+    }
+
+    #order-one-ul a{
+        text-decoration: none;
+        color: var(--greyblack);
+    }
+
+    #order-two h1{
+        padding-top: 10%;
+        font-size: 17px;
+    }
+
+    #sun {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+    #sun i {
+        font-size: 14px;
+        color: var(--yellow);
+    }
+
+    #order-two article {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #order-two article p{
+        background-color: var(--green);
+        font-size: 12px;
+        padding: 1.5%;
+        color: white;
+        font-weight: 700;
+        width: 8%;
+        border-radius: 10px;
+    }
+
+    #order-two article h4{
+        font-size: 15px;
+    }
+
+    .semer{
+        font-size: 12px;
+        text-decoration: none;
+        color: var(--mediumblue);
+    }
+
+    #order-three h2{
+        font-size: 17px;
+        padding-top: 8%;
+    }
+
+    #order-three p{
+        font-size: 14px;
+    }
+
+
+    #services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin: auto;
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+    #services a{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      text-decoration: none;
+      color: var(--greyblack);
+      flex: 1 1 calc(50% - 10px);
+    }
+
+    #order-four h2{
+        font-size: 17px;
+        padding-top: 5%;
+    }
+
+    #map{
+        width: 100%;
+        height: 200px;
+    }
+
+    #order-five{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #order-five img{
+        width: 100%;
+    }
+}
 
 
 footer  {
@@ -509,10 +641,8 @@ footer  {
     }
 
 
-
-  
-
    main{
+    
 
     #index-one{
         margin-top: 10%;
@@ -520,7 +650,12 @@ footer  {
     }
 
     #index-two{
-        margin-top: 45%;
+        margin-top: 8%;
+    }
+
+    #index-two img{
+        width: 84%;
+        height: 300px;
     }
 
     #index-four h2{
@@ -555,37 +690,96 @@ footer  {
         display: flex;
         flex-direction: column;
         width: 17%;
+        
     }
 
     #index-one form {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 2px;
+        gap: 3px;
         
     }
 
-
-    form select, form input, form button {
-        padding: 0;
+    form input {
         height: 20px;
     }
 
+   form select {
+    height: 35px;
+   }
     form label{
         font-size: 12px;
     }
     
-    index-one form button{
+    #index-one form button{
         margin-bottom: 0;
-        padding: 0;
+        padding: 0%;
+        height: 36px;
+        width: 7%;
         
+    }
+
+    #index-two article {
+        position: absolute;
+        top: 30%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        background: var(--lightblue);
+        color: var(--greyblack);
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        text-align: left;
+        width: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #index-two button {
+        position: absolute;
+        width: 23%;
+        bottom: 30%;
+        left: 78%;
+        transform: translate(-50%, -50%);
+        background-color: var(--yellow);
+        border: 1px solid rgba(221, 221, 221, 0.5);
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: 800;
     }
 
     
    }
-}
 
+   @media (min-width: 768px){
+
+    
+
+    main {
+        
+
+        #index-one form .formflex{
+            display: flex;
+            flex-direction: column;
+            width: 18%;
+            
+        }
+    
+        #index-one form {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 3px;
+            
+        }
+
+        #index-one form button{
+            
+        }
+
+    }
+    
+
+   }
 
    
 
 }
-
