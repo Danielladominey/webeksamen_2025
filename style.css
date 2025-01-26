@@ -16,6 +16,7 @@
 }
 
 /*HUSK FONT!!!!!!!!!*/
+
 body {
     max-width: 1400px;
     font-family: 'Montserrat', sans-serif;
@@ -75,6 +76,7 @@ header {
     }
 }
 
+
 main {
     max-width: 1000px;
     display: flex;
@@ -83,6 +85,7 @@ main {
     flex-direction: column;
 
 
+  
     /*Index css*/
     #bluewaters{
         width: 100%;
@@ -95,11 +98,6 @@ main {
     }
 
     #index-one{
-        position: relative;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
         width: 80%;
         padding: 3%;
         margin-top: 5%;
@@ -110,6 +108,11 @@ main {
         top: 18%;
         left: 8%;
         background-color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         
     }
 
@@ -118,7 +121,7 @@ main {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        width: 95%;
+        width: 80%;
         padding-inline-start: 0;
         gap: 20px;
     }
@@ -143,6 +146,7 @@ main {
         font-size: 15px;
     }
     #index-one form {
+        width: 80%;
         display: flex;
         flex-direction: column;
         gap: 2px;
@@ -151,6 +155,7 @@ main {
 
     form label{
         font-size: 12px;
+        margin-bottom: 2px;
     }
 
     form select, form input, form button {
@@ -158,9 +163,6 @@ main {
         margin-bottom: 15px;
     }
 
-   #flexbox-form #reiselengde{
-    width: 20%;
-   }
 
    #index-one form button{
     background-color: var(--yellow);
@@ -327,7 +329,7 @@ main {
     }
 
 
-    /*order main css*/
+    /*hotell main css*/
 
     #order-one {
         display: flex;
@@ -521,6 +523,103 @@ main {
         color: rgba(221, 221, 221, 0.5);
     }
 
+    #orderone {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        background-color: var(--mediumblue);
+        padding: 10px;
+    }
+
+    #orderone ul{
+        list-style: none;
+        display: inline-flex;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+    #orderone ul li{
+        font-size: 14px;
+        color: var(--white);
+    }
+
+    #dinevalg{
+        font-size: 14px;
+        border: 2px solid rgba(221, 221, 221, 0.5);
+        padding: 3%;
+        border-radius: 5px;
+        box-shadow: inset;
+    }
+
+    #ordertwo h1{
+        font-size: 20px;
+        margin-left: 3%;
+    }
+
+    #orderform{
+        background-color: var(--smokywhite);
+        padding: 15px;
+        margin: 2%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #orderform h2{
+        font-size: 12px;
+    }
+
+
+    fieldset{
+        border: none;
+    }
+
+    label{
+        display: block;
+        font-weight: bold;
+    }
+
+    input, select{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .fodselsd{
+        display: flex;
+        gap: 10px;
+    }
+
+    .radiokjonn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .radiokjonn label{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    input[type="radio" i] {
+        margin: 0;
+    }
+
+    #sistetrinn{
+        background-color: var(--yellow);
+        width: fit-content;
+        border: none;
+        padding: 4%;
+        margin-left: 5%;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+   
+
+
 
 
 
@@ -670,18 +769,31 @@ footer  {
 
 
 /*media queries*/
-@media (min-width: 500px){
+@media (min-width: 600px){
+
+    main{
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header{
+        padding: 0;
+        padding-bottom: 2%;
+    }
+
+    
 
     #mobilefirstnav{
         display: none;
     }
 
     header #desktopnav{
+        width: 100vw;
         display: flex;
         align-items: center;
         gap: 15px;
         margin-left: auto;
-        padding: 15px 20px;
+        padding: 0;
 
     }
 
@@ -720,10 +832,17 @@ footer  {
 
 
    main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
     
 
     #index-one{
-        margin-top: 10%;
+        margin-top: 12%;
+        width: 78%;
+        left: 11%;
+        padding: 0;
         margin-bottom: 0;
     }
 
@@ -732,7 +851,7 @@ footer  {
     }
 
     #index-two img{
-        width: 84%;
+        width: 80%;
         height: 300px;
     }
 
@@ -767,14 +886,14 @@ footer  {
     #index-one form .formflex{
         display: flex;
         flex-direction: column;
-        width: 17%;
+        width: fit-content;
         
     }
 
     #index-one form {
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 3px;
+        gap: 20px;
+        width: 95%;
         
     }
 
@@ -791,9 +910,11 @@ footer  {
     
     #index-one form button{
         margin-bottom: 0;
-        padding: 0%;
-        height: 36px;
-        width: 7%;
+        padding: 1%;
+        height: 35px;
+        margin-top: 3%;
+        font-size: 12px;
+        font-weight: bold;
         
     }
 
@@ -825,8 +946,21 @@ footer  {
         font-weight: 800;
     }
 
+    #index-three{
+        width: 80%;
+    }
+
+    #index-four{
+        margin-top: 5%;
+        width: 80%;
+    }
+
+    #index-four h2{
+        padding-left: 0;
+    }
+
     
-   }
+   } }
 
    @media (min-width: 768px){
     
@@ -834,19 +968,6 @@ footer  {
     main {
         
 
-        #index-one form .formflex{
-            display: flex;
-            flex-direction: column;
-            width: 18%;
-            
-        }
-    
-        #index-one form {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 3px;
-            
-        }
 
         #order-one{
             width: 80%;
@@ -950,10 +1071,6 @@ footer  {
 
        .semer{
         margin-left: 5%;
-       }
-
-
-
+       }}
    }
 
-}
