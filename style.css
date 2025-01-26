@@ -239,22 +239,22 @@ main {
 
 
     #index-three {
-        width: fit-content;
-        outline: 2px solid red;
+        width: 300px;
         display: flex;
         overflow-x: auto;
-        padding: 0%;
         scroll-snap-type: x mandatory;
+        gap: 20px;
         
     }   
 
     #index-three article {
-        outline: 2px solid blue;
         flex: 0 0 auto;
         scroll-snap-align: center;
-        width: 50;
+        width: 50%;
         border: 1px solid rgba(221, 221, 221, 0.5);
         border-radius: 10px;
+        padding: 3%;
+        
     }
 
     
@@ -776,9 +776,16 @@ footer  {
         padding: 20px;
     }
 
+    header nav{
+        display: block;
+
+    }
+
     header{
         padding: 0;
         padding-bottom: 2%;
+        display: flex;
+        flex-direction: column;
     }
 
     
@@ -788,13 +795,20 @@ footer  {
     }
 
     header #desktopnav{
-        width: 100vw;
+        width: 100%;
         display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-left: auto;
-        padding: 0;
+    }
 
+    header #desktopnav2{
+        display: flex;
+    }
+
+    header #desktopul2 a{
+        text-decoration: none;
+        color: var(--greyblack);
+        font-size: 12px;
+        font-weight: bold;
+    }
     }
 
     #desktopnav nav li{
@@ -810,9 +824,9 @@ footer  {
     #desktopnav .bluenav{
         color: var(--mediumblue);
         font-weight: 700;
-        font-size: 15px;
+        font-size: 13px;
         border: 1px solid;
-        padding: 8px;
+        padding: 5px;
         border-radius: 50px;
     }
 
@@ -829,6 +843,8 @@ footer  {
         display: block;
         width: 50px;
     }
+
+
 
 
    main{
