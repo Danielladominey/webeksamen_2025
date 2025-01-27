@@ -44,6 +44,7 @@ header {
     }
 
     #logo1{
+        display: inline;
         width: 50px;
     }
 
@@ -258,7 +259,6 @@ main {
     }
 
     
-  
 
 
     #index-three a{
@@ -617,6 +617,9 @@ main {
         font-weight: bold;
     }
 
+    #orderthree{
+        display: none;
+    }
    
 
 
@@ -765,9 +768,6 @@ footer  {
 
 
 
-
-
-
 /*media queries*/
 @media (min-width: 600px){
 
@@ -809,7 +809,7 @@ footer  {
         font-size: 12px;
         font-weight: bold;
     }
-    }
+    
 
     #desktopnav nav li{
         list-style: none;
@@ -835,14 +835,16 @@ footer  {
         padding-right: 8px;
     }
 
-    #logo1{
+    header #logo1{
         display: none;
     }
 
     header #logo2{
-        display: block;
+        display: inline;
         width: 50px;
     }
+
+
 
 
 
@@ -975,6 +977,48 @@ footer  {
         padding-left: 0;
     }
 
+    #ordertwo{
+        width: 45%;
+       }
+    
+       #orderform{
+        width: 80%;
+       }
+    
+       #orderpic{
+        width: 250px;
+       }
+    
+       #container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+       }
+    
+       #orderthree{
+        display: inline;
+        width: 45%;
+        margin-top: 17%;
+        border: 2px solid rgba(221, 221, 221, 0.5);
+        padding: 3%;
+        border-radius: 5px;
+        height: fit-content;
+       }
+
+       #orderul{
+        list-style: none;
+        padding: 0;
+       }
+    
+       #orderul li{
+        margin-bottom: 15px;
+       }
+       
+       #orderul li i{
+        margin-right: 15px;
+       }
+
+
     
    } }
 
@@ -1087,6 +1131,61 @@ footer  {
 
        .semer{
         margin-left: 5%;
-       }}
+       }
+
+    }
+
+    #ordermain #orderthree {
+        display: inline;
+    }
+
+   #ordermain{
+    margin: 0 auto;
    }
+
+   #ordertwo{
+    width: 50%;
+   }
+
+   #orderform{
+    width: 80%;
+   }
+
+   #orderpic{
+    width: 300px;
+   }
+
+   #container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+   }
+
+   #orderthree{
+    border: 2px solid rgba(221, 221, 221, 0.5);
+    padding: 3%;
+    border-radius: 5px;
+    height: fit-content;
+   }
+
+   #orderul{
+    list-style: none;
+    padding: 0;
+   }
+
+   #orderul li{
+    margin-bottom: 15px;
+   }
+   
+   #orderul li i{
+    margin-right: 15px;
+   }
+   
+
+
+       
+    }
+
+
+   
 

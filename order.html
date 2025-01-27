@@ -51,7 +51,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="ordermain">
         <section id="orderone">
             <ul>
                 <li>Søk ></li>
@@ -62,87 +62,128 @@
             </ul>
         </section>
 
-        <section id="ordertwo">
-            <h2 id="dinevalg">Dine valg ></h2>
-            <h1>Oppgi dine bestillingsopplysninger</h1>
+        <div id="container">
 
-            <form id="orderform">
-                <fieldset>
-                    <h2>Voksen 18+ Hovedbestiller</h2>
-                    <label for="fornavn">Fornavn (ifølge pass):</label>
-                    <input type="text" id="fornavn" placeholder="Ola">
+            <section id="ordertwo">
+                <h2 id="dinevalg">Dine valg ></h2>
+                <h1>Oppgi dine bestillingsopplysninger</h1>
     
-                    <label for="etternavn">Etternavn (ifølge pass):</label>
-                    <input type="text" id="enavn" placeholder="Nordmann">
-                
-                    <label for="fodselsdato">Fødselsdato:</label>
-                    <section class="fodselsd">
-                        <input type="number" id="dag" placeholder="DD">
-                        <input type="number" id="måned" placeholder="MM">
-                        <input type="number" id="ar" placeholder="ÅÅÅÅ">          
-                    </section>
+                <form id="orderform">
+                    <fieldset>
+                        <h2>Voksen 18+ Hovedbestiller</h2>
+                        <label for="fornavn">Fornavn (ifølge pass):</label>
+                        <input type="text" id="fornavn" placeholder="Ola">
+        
+                        <label for="etternavn">Etternavn (ifølge pass):</label>
+                        <input type="text" id="enavn" placeholder="Nordmann">
+                    
+                        <label for="fodselsdato">Fødselsdato:</label>
+                        <section class="fodselsd">
+                            <input type="number" id="dag" placeholder="DD">
+                            <input type="number" id="måned" placeholder="MM">
+                            <input type="number" id="ar" placeholder="ÅÅÅÅ">          
+                        </section>
+        
+                        <label>Kjønn:</label>
+                        <section class="radiokjonn">
+                            <label><input type="radio" value="kvinne">Kvinne</label>
+                            <label><input type="radio" value="mann">Mann</label>
+                        </section>
+        
+                        <label for="email">E-postadresse:</label>
+                        <input type="email" id="mail">
+        
+                        <label for="tlf">Telefonnummer:</label>
+                        <input type="tel" id="tlfnr">
+        
+                        <label for="adresse">Gateadresse:</label>
+                        <input type="text" id="adresse">
+        
+                        <label for="postnr">Postnummer:</label>
+                        <input type="number" id="postnummer">
+        
+                        <label for="sted">Poststed:</label>
+                        <input type="text" id="psted">
+        
+                        <label for="land">Land:</label>
+                        <select id="land">
+                            <option value="">Velg et land</option>
+                            <option value="norge">Norge</option>
+                            <option value="danmark">Danmark</option>
+                            <option value="sverige">Sverige</option>
+                            <option value="nederland">Nederland</option>
+                            <option value="finland">Finland</option>
+                        </select>
+                    </fieldset>
     
-                    <label>Kjønn:</label>
-                    <section class="radiokjonn">
-                        <label><input type="radio" value="kvinne">Kvinne</label>
-                        <label><input type="radio" value="mann">Mann</label>
-                    </section>
+                    <fieldset>
+                        <h2>Voksen 18+</h2>
     
-                    <label for="email">E-postadresse:</label>
-                    <input type="email" id="mail">
+                        <label for="fornavn1">Fornavn (ifølge pass):</label>
+                        <input type="text" id="fornavn1">
     
-                    <label for="tlf">Telefonnummer:</label>
-                    <input type="tel" id="tlfnr">
+                        <label for="etternavn1">Etternavn (ifølge pass):</label>
+                        <input type="text" id="etternavn1">
     
-                    <label for="adresse">Gateadresse:</label>
-                    <input type="text" id="adresse">
+                        <label for="fodselsdato2">Fødselsdato</label>
+                        <label for="fodselsdato">Fødselsdato:</label>
+                        <section class="fodselsd">
+                            <input type="number" id="dag" placeholder="DD">
+                            <input type="number" id="måned" placeholder="MM">
+                            <input type="number" id="ar" pattern="ÅÅÅÅ">          
+                        </section>
     
-                    <label for="postnr">Postnummer:</label>
-                    <input type="number" id="postnummer">
+                        <label>Kjønn:</label>
+                        <section class="radiokjonn">
+                            <label><input type="radio" value="kvinne">Kvinne</label>
+                            <label><input type="radio" value="mann">Mann</label>
+                        </section>   
+                    </fieldset>
+                    
+                    <button type="submit" id="sistetrinn">Siste trinn -></button>
+                </form>
+            </section>
     
-                    <label for="sted">Poststed:</label>
-                    <input type="text" id="psted">
-    
-                    <label for="land">Land:</label>
-                    <select id="land">
-                        <option value="">Velg et land</option>
-                        <option value="norge">Norge</option>
-                        <option value="danmark">Danmark</option>
-                        <option value="sverige">Sverige</option>
-                        <option value="nederland">Nederland</option>
-                        <option value="finland">Finland</option>
-                    </select>
-                </fieldset>
+            <section id="orderthree">
+                <article class="booking">
+                    <img src="img/landscape-2016308_640.jpg" id="orderpic" alt="sun chairs by pool">
+                    <h3>Parga Beach</h3>
 
-                <fieldset>
-                    <h2>Voksen 18+</h2>
+                    <ul id="sun">
+                        <li>
+                            <i class="fa-solid fa-sun"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-sun"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-sun"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-sun"></i>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-sun"></i>
+                        </li>
+                    </ul>
 
-                    <label for="fornavn1">Fornavn (ifølge pass):</label>
-                    <input type="text" id="fornavn1">
+                    <ul id="orderul">
+                        <li><i class="fa-solid fa-location-dot"></i>Hellas, Parga</li>
+                        <li><i class="fa-regular fa-calendar"></i>Man 5. mai -12. mai 2025</li>
+                        <li><i class="fa-regular fa-user"></i>2 Voksne</li>
+                        <li><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt</li>
+                        <li><i class="fa-solid fa-utensils"></i>Frokostbuffè</li>
+                        <li><i class="fa-solid fa-plane-departure"></i>Oslo Lufthavn -- Preveza</li>
+                        <li>22 003,-</li>
+                        <li>19 803,-</li>
+                    </ul>
+    
+                </article>
+    
+            </section>
 
-                    <label for="etternavn1">Etternavn (ifølge pass):</label>
-                    <input type="text" id="etternavn1">
-
-                    <label for="fodselsdato2">Fødselsdato</label>
-                    <label for="fodselsdato">Fødselsdato:</label>
-                    <section class="fodselsd">
-                        <input type="number" id="dag" placeholder="DD">
-                        <input type="number" id="måned" placeholder="MM">
-                        <input type="number" id="ar" pattern="ÅÅÅÅ">          
-                    </section>
-
-                    <label>Kjønn:</label>
-                    <section class="radiokjonn">
-                        <label><input type="radio" value="kvinne">Kvinne</label>
-                        <label><input type="radio" value="mann">Mann</label>
-                    </section>   
-                </fieldset>
-                
-            
-                <button type="submit" id="sistetrinn">Siste trinn -></button>
-            </form>
-        </section>
-
+        </div>
+    
     </main>
    
     
