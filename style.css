@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('fonts/Montserrat\ \(1\)/') format('truetype');
+    src: url('..assets/fonts/Montserrat.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,14 +23,6 @@ body {
 }
 
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    padding-bottom: 20px;
-
-
     #desktopnav{
         display: none;
     }
@@ -71,10 +63,142 @@ header {
         font-size: 24px;
         color: var(--greyblack);
     }
+    
+}
 
-    #user{
-       
+
+#indexheader {
+    display: grid;
+    grid-template-rows: 100px 300px 200px 100px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    position: relative;
+ 
+     #bannerbilde {
+         grid-row: 2 / 3;
+         width: 100%;
+         height: 300px;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+         z-index: 1;
+     }
+
+     nav {
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
+ 
+     #bannerbilde img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+ 
+         #bluewaters{
+             grid-row: 2 / 3;
+             width: 100%;
+             height: 200px;
+             object-fit: cover;
+         }
+ 
+         #index-one{
+             grid-row: 2 / 4;
+             width: 80%;
+             padding: 3%;
+             margin-top: -10x;
+             border: 1px solid rgba(221, 221, 221, 0.5);
+             border-radius: 10px;
+             position: absolute;
+             top: 18%;
+             left: 8%;
+             background-color: white;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             flex-direction: column;
+             z-index: 2;
+             
+         }
+ 
+ 
+     #scrollul{
+         display: flex;
+         overflow-x: auto;
+         scroll-snap-type: x mandatory;
+         width: 80%;
+         padding-inline-start: 0;
+         gap: 20px;
+     }
+ 
+     #scrollul li {
+         flex: 0 0 auto;
+         scroll-snap-align: center;
+         list-style: none;
+         width: fit-content;
+         text-align: center;
+     }
+ 
+     #scrollul li a {
+         display: flex;
+         text-decoration: none;
+         color: var(--greyblack);
+         font-size: 12px;
+     }
+ 
+     #scrollul li i{
+         margin-right: 5px;
+         font-size: 15px;
+     }
+     #index-one form {
+         width: 80%;
+         max-width: 1000px;
+         display: flex;
+         flex-direction: column;
+         gap: 2px;
+         margin-bottom: 0%;
+     }
+ 
+     form label{
+         font-size: 12px;
+         margin-bottom: 2px;
+     }
+ 
+     form select, form input, form button {
+         padding: 5px;
+         margin-bottom: 15px;
+     }
+ 
+ 
+    #index-one form button{
+     background-color: var(--yellow);
+     border: none;
+     border-radius: 5px;
+     padding: 3%;
+    }
+
+}
+
+#hotellheader{
+
+    #order-one {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smoooth;
+        width: 100%;
+        height: 50vh;
+    }
+
+    #order-one img {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        object-fit: cover;
+        height: 100%;
+    }
+
 }
 
 
@@ -88,92 +212,13 @@ main {
 
   
     /*Index css*/
-    #bluewaters{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
+   
 
     #womanpool{
         width: 100%;
     }
 
-    #index-one{
-        width: 80%;
-        padding: 3%;
-        margin-top: 5%;
-        margin-bottom: 20%;
-        border: 1px solid rgba(221, 221, 221, 0.5);
-        border-radius: 10px;
-        position: absolute;
-        top: 18%;
-        left: 8%;
-        background-color: white;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        
-    }
-
-
-    #scrollul{
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        width: 80%;
-        padding-inline-start: 0;
-        gap: 20px;
-    }
-
-    #scrollul li {
-        flex: 0 0 auto;
-        scroll-snap-align: center;
-        list-style: none;
-        width: fit-content;
-        text-align: center;
-    }
-
-    #scrollul li a {
-        display: flex;
-        text-decoration: none;
-        color: var(--greyblack);
-        font-size: 12px;
-    }
-
-    #scrollul li i{
-        margin-right: 5px;
-        font-size: 15px;
-    }
-    #index-one form {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        margin-bottom: 0%;
-    }
-
-    form label{
-        font-size: 12px;
-        margin-bottom: 2px;
-    }
-
-    form select, form input, form button {
-        padding: 5px;
-        margin-bottom: 15px;
-    }
-
-
-   #index-one form button{
-    background-color: var(--yellow);
-    border: none;
-    border-radius: 5px;
-    padding: 3%;
-   }
-
     #index-two {
-        margin-top: 70%;
         position: relative;
         width: 100%;
         height: 100%;
@@ -331,22 +376,7 @@ main {
 
     /*hotell main css*/
 
-    #order-one {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smoooth;
-        width: 100%;
-        height: 50vh;
-    }
-
-    #order-one img {
-        flex: 0 0 100%;
-        scroll-snap-align: center;
-        object-fit: cover;
-        height: 100%;
-    }
-
+   
     #order-one-ul{
         display: flex;
         list-style: none;
@@ -564,6 +594,10 @@ main {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+
+        input, select{
+            width: 85%;
+        }
     }
 
     #orderform h2{
@@ -620,11 +654,6 @@ main {
     #orderthree{
         display: none;
     }
-   
-
-
-
-
 
 }
 
@@ -778,12 +807,12 @@ footer  {
 
     header nav{
         display: block;
-
+        padding-bottom: 5%;
     }
 
     header{
         padding: 0;
-        padding-bottom: 2%;
+        padding-bottom: 5%;
         display: flex;
         flex-direction: column;
     }
@@ -846,7 +875,55 @@ footer  {
 
 
 
+    #hotellheader{
+        
+        #order-one{
+            width: 80%;
+            margin: 0 auto;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "big1 big1 small1 small2"
+            "small3 small4 big2 big2";
+            gap: 2%;
+        }   
 
+        #big1 {
+            grid-area: big1;
+            width: 100%;
+            grid-row: span 2;
+        }
+        #big2 {
+            grid-area: big2;
+            width: 100%;
+            grid-row: span 2;
+        }
+
+        #small1 {
+            grid-area: small1;
+            width: 100%;
+            grid-row: span 1;
+        }
+        #small2 {
+            grid-area: small2;
+            width: 100%;
+            grid-row: span 1;
+        }
+
+        #small3 {
+            grid-area: small3;
+            width: 100%;
+            grid-row: span 1;
+        }
+
+        #small4 {
+            grid-area: small4;
+            width: 100%;
+            grid-row: span 1;
+        }
+    }
 
 
    main{
@@ -978,11 +1055,15 @@ footer  {
     }
 
     #ordertwo{
-        width: 45%;
+        width: 50%;
        }
     
        #orderform{
-        width: 80%;
+        width: 90%;
+
+        input, select{
+            width: 90%;
+        }
        }
     
        #orderpic{
@@ -997,7 +1078,7 @@ footer  {
     
        #orderthree{
         display: inline;
-        width: 45%;
+        width: 40%;
         margin-top: 17%;
         border: 2px solid rgba(221, 221, 221, 0.5);
         padding: 3%;
@@ -1026,54 +1107,6 @@ footer  {
     
 
     main {
-        
-
-
-        #order-one{
-            width: 80%;
-            height: fit-content;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto auto auto;
-            grid-template-areas: 
-            "big1 big1 small1 small2"
-            "small3 small4 big2 big2";
-            gap: 2%;
-        }   
-
-        #big1 {
-            grid-area: big1;
-            width: 100%;
-            grid-row: span 2;
-        }
-        #big2 {
-            grid-area: big2;
-            width: 100%;
-            grid-row: span 2;
-        }
-
-        #small1 {
-            grid-area: small1;
-            width: 100%;
-            grid-row: span 1;
-        }
-        #small2 {
-            grid-area: small2;
-            width: 100%;
-            grid-row: span 1;
-        }
-
-        #small3 {
-            grid-area: small3;
-            width: 100%;
-            grid-row: span 1;
-        }
-
-        #small4 {
-            grid-area: small4;
-            width: 100%;
-            grid-row: span 1;
-        }
 
         #order-one-ul{
             width: 80%;
