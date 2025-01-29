@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Hotell</title>
 </head>
 
@@ -29,11 +29,12 @@
                     
                     <section id="desktopnav">
                         <ul>
-                            <li>
-                                <a href="order.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
-                             </li>
-                             <a href="#" class="bluenav"><li>Opprett en konto</li></a>
-                             <a href="#" class="bluenav"><li><i class="fa-regular fa-user" id="user2"></i>Min side</li></a>
+                            <li><a href="order.html"> <i class="fa-solid fa-magnifying-glass"></i></a> </li>
+
+                            <li> <a href="#" class="bluenav">Opprett en konto</a></li>
+
+                            
+                            <li> <a href="#" class="bluenav"><i class="fa-regular fa-user" id="user2"></i>Min side</a></li>
                         </ul>
                     </section>
                        
@@ -41,12 +42,13 @@
                     <section id="desktopnav2">
                         <a href="index.html"><img src="img/fav.png" id="logo2" alt="logo"></a>
                     <ul id="desktopul2">
-                        <a href="#"><li>Tips og inspirasjon</li></a>
-                        <a href="#"><li>Hotell</li></a>
-                        <a href="#"><li>Fly</li></a>
-                        <a href="#"><li>Kontakt</li></a>
+                        <li><a href="index.html#index-four">Tips og inspirasjon</a></li>
+                        <li> <a href="hotell.html">Hotell</a></li>
+                        <li> <a href="https://www.norwegian.no/">Fly</a></li>
+                        <li> <a href="#flags">Kontakt</a></li>
                     </ul> 
                     </section>
+
         </nav>
 
                     <section id="order-one">
@@ -65,7 +67,7 @@
 
         <ul id="order-one-ul">
             <li>
-                <a href="#">Oversikt</a>
+                <a href="#" id="overskrift">Oversikt</a>
             </li>
             <li>
                 <a href="#">Fasiliteter</a>
@@ -99,7 +101,7 @@
 
             <article>
                 <p>8.9</p>
-                <h4>Fantastisk</h3>
+                <h4>Fantastisk</h4>
             </article>
             <a href="#" class="semer">Se alle anmeldelsene <i class="fa-solid fa-angle-right"></i></a>
         </section>
@@ -194,9 +196,78 @@
             </article>
         </section>
     </main>
-    
-</body>
-</html>
+
+    <footer>
+        <section id="flags">
+            <article>
+                <img src="flags/sweden.png" alt="flag sweden">
+                <p>Sverige</p>
+            </article>
+            <article>
+                <img src="flags/denmark.png" alt="flag denmark">
+                <p>Danmark</p>
+            </article>
+            <article>
+                <img src="flags/norway.png" alt="flag norway">
+                <p>Sverige</p>
+            </article>
+            <article>
+                <img src="flags/material.png" alt="flag finland">
+                <p>Suomi</p>
+            </article>
+            <article>
+                <img src="flags/netherlands.png" alt="flag netherland">
+                <p>Nederland</p>
+            </article>
+        </section>
+        
+        <section id="pay">
+            <h4>Betalingsmetoder</h4>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>  
+            </ul>
+        </section>
+        
+        
+        <section id="sub">
+            <h4>Nyheter & tilbud</h4>
+            <p>Meld deg på nyhetsbrev her</p>
+            <form action="#" method="POST">
+               <input type="email" id="email1" name="email" placeholder="ola@example.com...">
+               <button type="submit">Send</button>
+            </form>
+            <a href="#" id="present">Kjøp reisegavekort</a>
+        </section> 
+
+       
+
+
+        <section id="service">
+            <h4>Kundeservice</h4>
+            <ul>
+                <li><a href="#">Spørsmål og svar</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="tilgjengelighetserklaering.pdf.pdf" target="_blank">Tilgjengelighetserklæring</a></li>  
+            </ul>
+        </section>
+
+        <section id="some">
+            <h4>Sosiale medier</h4>
+            <ul>
+                <li> <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href="https://www.tiktok.com/explore"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </section>
+        
+    </footer>
     
 </body>
 </html>

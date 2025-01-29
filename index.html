@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Hjem</title>
 </head>
 <body>
@@ -27,11 +27,12 @@
                     
                     <section id="desktopnav">
                         <ul>
-                            <li>
-                                <a href="order.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
-                             </li>
-                             <a href="#" class="bluenav"><li>Opprett en konto</li></a>
-                             <a href="#" class="bluenav"><li><i class="fa-regular fa-user" id="user2"></i>Min side</li></a>
+                            <li><a href="order.html"> <i class="fa-solid fa-magnifying-glass"></i></a> </li>
+
+                            <li> <a href="#" class="bluenav">Opprett en konto</a></li>
+
+                            
+                            <li> <a href="#" class="bluenav"><i class="fa-regular fa-user" id="user2"></i>Min side</a></li>
                         </ul>
                     </section>
                        
@@ -39,10 +40,10 @@
                     <section id="desktopnav2">
                         <a href="index.html"><img src="img/fav.png" id="logo2" alt="logo"></a>
                     <ul id="desktopul2">
-                        <a href="#index-four"><li>Tips og inspirasjon</li></a>
-                        <a href="hotell.html"><li>Hotell</li></a>
-                        <a href="https://www.norwegian.no/"><li>Fly</li></a>
-                        <a href="#flags"><li>Kontakt</li></a>
+                        <li><a href="#index-four">Tips og inspirasjon</a></li>
+                        <li> <a href="hotell.html">Hotell</a></li>
+                        <li> <a href="https://www.norwegian.no/">Fly</a></li>
+                        <li> <a href="#flags">Kontakt</a></li>
                     </ul> 
                     </section>
 
@@ -74,9 +75,9 @@
                     </li>
                 </ul>
 
-             <form action ="" method="POST">
+             <form action ="#" method="POST">
                 <article class="formflex">
-                    <label for="from">Fra</label>
+                    <label>Fra</label>
                     <select id="fra">
                      <option value="1">Oslo Lufthavn</option>
                      <option value="2">Torp Sandefjord Lufthavn</option>
@@ -86,7 +87,7 @@
                 </article>
                  
                 <article class="formflex">
-                    <label for="to">Til</label>
+                    <label>Til</label>
                     <select id="til">
                      <option value="1">Albania</option>
                      <option value="2">Danmark</option>
@@ -96,7 +97,7 @@
                 </article>
                
                 <article class="formflex">
-                    <label for="time">Reiselenge</label>
+                    <label>Reiselenge</label>
                     <select id="reiselengde">
                      <option value="1">Mindre enn 1 uke</option>
                      <option value="2">1 uke</option>
@@ -106,14 +107,13 @@
                 </article>
                 
                 <article class="formflex">
-                    <label for="date">Velg dato</label>
+                    <label>Velg dato</label>
                     <input type="date" id="dato" required> 
-                   </div>
                 </article>
                 
                 <article class="formflex">
                      <!-- https://stackoverflow.com/questions/26003148/change-the-increment-value-of-html-number-input-decimals-->
-                    <label for="quantity">Reisende</label>
+                    <label>Antall reisende</label>
                     <input type="number" id="antall" min="1" max="15" step="1" required>
                 </article>
                <button>Søk</button>
@@ -126,7 +126,7 @@
         <section id="index-two">
             <img src="img/holiday-2733322_1280.jpg" alt="Woman in pool" id="womanpool">
             <article>
-                <h2>Bestill sommerens beste uke</h1>
+                <h2>Bestill sommerens beste uke</h2>
                 <p>Fly + hotell, 7 dager</p>
                 <p class="thick">Fra 3298,-</p>
             </article>
@@ -202,35 +202,35 @@
     <footer>
         <section id="flags">
             <article>
-                <img src="flags/sweden.png">
+                <img src="flags/sweden.png" alt="flag sweden">
                 <p>Sverige</p>
             </article>
             <article>
-                <img src="flags/denmark.png">
+                <img src="flags/denmark.png" alt="flag denmark">
                 <p>Danmark</p>
             </article>
             <article>
-                <img src="flags/norway.png">
+                <img src="flags/norway.png" alt="flag norway">
                 <p>Sverige</p>
             </article>
             <article>
-                <img src="flags/material.png">
+                <img src="flags/material.png" alt="flag finland">
                 <p>Suomi</p>
             </article>
             <article>
-                <img src="flags/netherlands.png">
+                <img src="flags/netherlands.png" alt="flag netherland">
                 <p>Nederland</p>
             </article>
         </section>
         
         <section id="pay">
-            <h4>Betalingsmetoder</h3>
+            <h4>Betalingsmetoder</h4>
             <ul>
-                <a href="#"><li><i class="fa-brands fa-cc-visa"></i></li></a>
-                <a href="#"><li><i class="fa-brands fa-cc-mastercard"></i></li></a>
-                <a href="#"><li><i class="fa-brands fa-cc-paypal"></i></li></a>
-                <a href="#"><li><i class="fa-brands fa-cc-apple-pay"></i></li></a>
-                <a href="#"><li><i class="fa-brands fa-cc-amazon-pay"></i></li></a>
+                <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>  
             </ul>
         </section>
         
@@ -242,29 +242,30 @@
                <input type="email" id="email1" name="email" placeholder="ola@example.com...">
                <button type="submit">Send</button>
             </form>
+            <a href="#" id="present">Kjøp reisegavekort</a>
         </section> 
 
-        <a href="#" id="present">Kjøp reisegavekort</a>
+       
 
 
         <section id="service">
             <h4>Kundeservice</h4>
             <ul>
-                <a href="#"><li>Spørsmål og svar</li></a>
-                <a href="#"><li>Chat</li></a>
-                <a href="#"><li>Kontakt</li></a>
-                <a href="#"><li>Tilgjengelighetserklæring</li></a>
+                <li><a href="#">Spørsmål og svar</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="tilgjengelighetserklaering.pdf.pdf" target="_blank">Tilgjengelighetserklæring</a></li>  
             </ul>
         </section>
 
         <section id="some">
             <h4>Sosiale medier</h4>
             <ul>
-                <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram"></i></li></a>
-                <a href="https://www.facebook.com/"><li><i class="fa-brands fa-facebook"></i></li></a>
-                <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></li></a>
-                <a href="https://www.tiktok.com/explore"><i class="fa-brands fa-tiktok"></i></li></a>
-                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></li></a>
+                <li> <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href="https://www.tiktok.com/explore"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
         </section>
         
