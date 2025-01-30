@@ -8,10 +8,14 @@
     --white: #f6f5f2; 
 }
 
+
+/*https://www.youtube.com/watch?v=g15mF_XAOB8 brukt til hjelp til å implimentere font. 
+Måtte også spørre chatgpt, det ligger i eksamensdokument*/
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Regular.ttf) format('truetype');
 }
+
 
 /*HUSK FONT!!!!!!!!!*/
 
@@ -65,9 +69,10 @@ header {
 }
 
 
-#indexheader {
+/*Header for index*/
+header#indexheader {
     display: grid;
-    grid-template-rows: 100px 300px 200px 100px;
+    grid-template-rows: 100px 150px 150px 150px;
     grid-template-columns: 1fr;
     width: 100%;
     position: relative;
@@ -79,13 +84,17 @@ header {
          justify-content: center;
          align-items: center;
          position: relative;
-         z-index: 1;
      }
 
      nav {
         grid-row: 1 / 2;
         align-items: center;
         width: 100%;
+    }
+
+    #understrek-scrollul-index{
+        text-decoration: underline 2px var(--mediumblue);
+        
     }
  
      #bannerbilde img{
@@ -116,7 +125,6 @@ header {
              align-items: center;
              justify-content: center;
              flex-direction: column;
-             z-index: 2;
              
          }
  
@@ -126,6 +134,7 @@ header {
          overflow-x: auto;
          scroll-snap-type: x mandatory;
          width: 80%;
+         padding-bottom: 4%;
          padding-inline-start: 0;
          gap: 20px;
      }
@@ -180,18 +189,20 @@ header {
 
 }
 
-#hotellheader{
+
+/*Header for hotell*/
+    header#hotellheader{
 
     #order-one {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        scroll-behavior: smoooth;
+        scroll-behavior: smooth;
         width: 100%;
         height: 50vh;
     }
 
-    #order-one img {
+    #header #order-one img {
         flex: 0 0 100%;
         scroll-snap-align: center;
         object-fit: cover;
@@ -201,6 +212,8 @@ header {
 }
 
 
+
+/*Main css*/
 main {
     max-width: 1000px;
     display: flex;
@@ -211,8 +224,6 @@ main {
 
   
     /*Index css*/
-   
-
     #womanpool{
         width: 100%;
     }
@@ -224,11 +235,12 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -125px;
+       
         padding-bottom: 10%;
     }
 
     #index-two img {
+        position: relative;
         width: 100%;
         height: 300px;
         border-radius: 10px;
@@ -255,9 +267,10 @@ main {
         font-weight: 800;
     }
 
+  
     #index-two article {
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         background: var(--lightblue);
@@ -265,27 +278,33 @@ main {
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
         text-align: left;
-        width: 65%;
+        width: 250px;
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    #index-two button {
+    #index-two #button1 {
+        text-decoration: none;
+        color: var(--greyblack);
         position: absolute;
-        bottom: 15%;
-        left: 50%;
-        transform: translateX(-50);
+        left: 85%;
+        margin-top: 5%;
+        width: 25%;
+        text-align: center;
+        transform: translate(-50%);
         background-color: var(--yellow);
         border: 1px solid rgba(221, 221, 221, 0.5);
         padding: 10px;
         border-radius: 8px;
-        font-weight: 800;
+        font-weight: bold;
+        font-size: 11px;
     }
 
 
 
     #index-three {
-        width: 300px;
+        width: 100%;
+        margin: 2%;
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -304,8 +323,6 @@ main {
     }
 
     
-
-
     #index-three a{
         font-size: 15px;
         text-decoration: none;
@@ -338,11 +355,23 @@ main {
         padding-right: 5%;
     }
 
-    #index-four p{
-        padding-left: 5%;
-        padding-right: 5%;
+    .air{
+        padding: 5%;
         align-self: flex-start;
         text-align: left;
+        font-size: 12px;
+        
+    }
+
+    /*brukt chatgpt til å finne ut av hvordan jeg kan få luft mellom tekst og underlinje. Prompt i eksamensdokument*/
+    #index-four a{
+        color: black;
+        position: absolute;
+        bottom: -3%;
+        left: 5px;
+        text-decoration: underline 2px var(--mediumblue);
+        text-underline-offset: 7px;
+        
     }
 
     #index-four article{
@@ -374,10 +403,9 @@ main {
     }
 
 
+
+
     /*hotell main css*/
-
-
-   
     #order-one-ul{
         display: flex;
         list-style: none;
@@ -550,16 +578,21 @@ main {
         font-size: 12px;
     }
 
-    #velgrom{
-        width: 100%;
-        margin-left: 2%;
-        font-size: 17px;
-    }
+   
 
     hr{
         margin-top: 3%;
         width: 100%;
         color: rgba(221, 221, 221, 0.5);
+    }
+
+
+    /*Order css*/
+
+    #velgrom{
+        width: 100%;
+        margin-left: 2%;
+        font-size: 17px;
     }
 
     #orderone {
@@ -569,6 +602,31 @@ main {
         background-color: var(--mediumblue);
         padding: 10px;
     }
+
+    #orderone a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #orderone i{
+        font-size: 20px;
+    }
+
+    section#orderthree{
+        display: none;
+    }
+
+    #container .booking{
+        display: none;
+    }
+   
+   #container #ordertwo{
+    width: 100%;
+   }
+
+   #container #orderthree{
+    display: none;
+   }
 
     #orderone ul{
         list-style: none;
@@ -660,12 +718,52 @@ main {
         font-weight: bold;
     }
 
-    #orderthree{
-        display: none;
+    #opplysning{
+        text-transform: uppercase;
+    }
+
+    #detail{
+        border: 2px solid rgba(221, 221, 221, 0.5);
+        border-radius: 10px;
+        padding: 3%;
+
+        #orderpic2{
+            width: 200px;
+        }
+
+        
+        #sun1 {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+        }
+
+        #sun1 i {
+        font-size: 14px;
+        color: var(--yellow);
+        }
+
+        #orderul1{
+            list-style: none;
+            padding: 0;
+        }
+        
+        #orderul1 li{
+            margin-bottom: 15px;
+        }
+        
+        #orderul1 li i{
+            margin-right: 15px;
+        }
     }
 
 }
 
+
+
+/*Footer css*/
 
 footer  {
     background-color: var(--greyblack);
@@ -806,8 +904,8 @@ footer  {
 
 
 
-/*media queries*/
-@media (min-width: 600px){
+/*media queries 600px*/
+@media (min-width: 600px) { 
 
 
     main{
@@ -884,29 +982,46 @@ footer  {
     }
 
 
-    #indexheader{
-        
+    header#indexheader{
+        display: grid;
+        grid-template-rows: 125px 200px;
+        grid-template-columns: 1fr;
+        width: 100%;
+        position: relative; 
+
+        #bannerbilde{
+        height: 150px;
+    }
+
+    #index-one form {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        width: 100%; 
+    }
+
     #index-one form .formflex{
         display: flex;
         flex-direction: column;
-        width: 350px;
-        
+        width: 350px; 
     }
+
 
     #bannerbilde{
         height: 150px;
     }
 
     #index-one form {
+        display: flex;
         flex-direction: row;
         gap: 24px;
-        width: 100%;
-
-        input, select{
-            width: 95%;
-        
-        }   
+        width: 100%; 
     }
+
+    input, select{
+        width: 95%;
+    
+    }  
 
     form input {
         height: 20px;
@@ -915,10 +1030,19 @@ footer  {
     form select {
     height: 40px;
     }
+
     form label{
         font-size: 12px;
     }
-    
+
+    #scrollul{
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 2%;
+        gap: 25px;
+        scroll-snap-type: none;
+    }
+
     #index-one form button{
         margin-bottom: 0;
         padding: 1%;
@@ -929,16 +1053,18 @@ footer  {
         width: 20%;
     }
 
-    #scrollul{
-        width: 100%;
-        margin-bottom: 3%;
-        gap: 25px;
-        scroll-snap-type: none;
-    }
-    }
+    
 
 
-    #hotellheader{
+    } 
+
+    
+    
+   
+    
+
+
+    header#hotellheader{
         
         #order-one{
             width: 80%;
@@ -951,6 +1077,7 @@ footer  {
             "big1 big1 small1 small2"
             "small3 small4 big2 big2";
             gap: 2%;
+            height: fit-content;
         }   
 
         #big1 {
@@ -989,13 +1116,15 @@ footer  {
     } 
 
 
+
+
     main{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
         
-
+    
         #index-one{
             margin-top: 12%;
             width: 78%;
@@ -1005,7 +1134,6 @@ footer  {
         }
 
         #index-two{
-            margin-top: -350px;
             width: 85%;
         }
 
@@ -1088,6 +1216,7 @@ footer  {
             padding-left: 0;
         }
 
+    
         #ordertwo{
             width: 50%;
         }
@@ -1101,25 +1230,10 @@ footer  {
         }
         
         #orderpic{
-            width: 250px;
+            width: 80%
         }
         
-        #container{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        
-        #orderthree{
-            display: inline;
-            width: 40%;
-            margin-top: 17%;
-            border: 2px solid rgba(221, 221, 221, 0.5);
-            padding: 3%;
-            border-radius: 5px;
-            height: fit-content;
-        }
-
+     
         #orderul{
             list-style: none;
             padding: 0;
@@ -1135,6 +1249,7 @@ footer  {
 
         #order-one-ul{
             width: 90%;
+            padding-top: 3%;
         }
 
         hr{
@@ -1149,7 +1264,18 @@ footer  {
             width: 80%;
             padding-left: 6%;
         }
-    }
+
+    
+       section#ordertwo{
+        width: 50%;
+       }
+
+       #velgrom{
+        width: 85%;
+       }
+
+    } 
+    
 
 
     footer{
@@ -1160,25 +1286,51 @@ footer  {
         padding-bottom: 2%;
         padding-right: 2%;
 
+
+        /*brukt chatgpt til å finne ut av hvordan jeg kan ta et element over hele vidden når man er i en flexbox med flexwrap. Prompt står i eksamensdokument */
         #flags{
             margin-bottom: 3%;
             flex-basis: 100%;
         }
-    }
-
+} 
 }
 
-    
 
-        
- 
 
+
+    /*Media querues 768*/
    @media (min-width: 768px){
-    
 
     main {
 
-       
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        details{
+            display: none;
+        }
+        
+        #container #orderthree{
+            display: inline;
+            width: 40%;
+            margin-top: 17%;
+            border: 2px solid rgba(221, 221, 221, 0.5);
+            padding: 3%;
+            border-radius: 5px;
+            height: fit-content;
+        }
+    
+        #container .booking{
+            display: inline;
+        }
+
+        #container #ordertwo{
+            width: 50%;
+        }
+    
 
         #map{
             width: 45vh;
@@ -1218,67 +1370,65 @@ footer  {
         max-width: 30%;
        }
 
-       #velgrom {
-        margin-left: 20%;
-       }
+       #orderul{
+        list-style: none;
+        padding: 0;
+    }
+    
+    #orderul li{
+        margin-bottom: 15px;
+    }
+    
+    #orderul li i{
+        margin-right: 15px;
+    }
 
        .semer{
         margin-left: 5%;
        }
 
-    }
+        #ordermain #orderthree {
+            display: inline;
+        }
 
-    #ordermain #orderthree {
-        display: inline;
-    }
+        #ordermain{
+            margin: 0 auto;
+        }
 
-   #ordermain{
-    margin: 0 auto;
-   }
+        #ordertwo{
+            width: 50%;
+        }
 
-   #ordertwo{
-    width: 50%;
-   }
+        #orderform{
+            width: 80%;
+        }
 
-   #orderform{
-    width: 80%;
-   }
+        #orderpic{
+            width: 300px;
+        }
 
-   #orderpic{
-    width: 300px;
-   }
+        #orderthree{
+            border: 2px solid rgba(221, 221, 221, 0.5);
+            padding: 3%;
+            border-radius: 5px;
+            height: fit-content;
+        }
 
-   #container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-   }
+        #orderul{
+            list-style: none;
+            padding: 0;
+        }
 
-   #orderthree{
-    border: 2px solid rgba(221, 221, 221, 0.5);
-    padding: 3%;
-    border-radius: 5px;
-    height: fit-content;
-   }
-
-   #orderul{
-    list-style: none;
-    padding: 0;
-   }
-
-   #orderul li{
-    margin-bottom: 15px;
-   }
-   
-   #orderul li i{
-    margin-right: 15px;
-   }
-   
+        #orderul li{
+            margin-bottom: 15px;
+        }
+        
+        #orderul li i{
+            margin-right: 15px;
+        }}
+                   
+}
 
 
-       
-    } 
-
-
-   
+        
 

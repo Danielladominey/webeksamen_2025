@@ -56,9 +56,12 @@
                     <img src="img/sea-4768869_1920.jpg" alt="Sea blue water" id="bluewaters">
                 </section>
 
+
+                <!--Her har jeg brukt chatgpt for å huske hvordan jeg lager en horisontal scroll. Dette med scroll-snao husker jeg fra arbeidskrav og forelesninger,
+                men trengte litt oppdatering for å huske alt. Denne samme informasjonen har jeg brukt på alle scroll på hele nettsiden og prompt ligger i eksamensdokumentet -->
                 <section id="index-one">
                 <ul id="scrollul">
-                    <li>
+                    <li id="understrek-scrollul-index">
                         <a href=""><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
                     </li>
                     <li>
@@ -75,10 +78,13 @@
                     </li>
                 </ul>
 
+
+            <!--Fikk hjelp av chatgpt til å skjønne hvorfor jeg fikk error (disabled selected. Står i prompt)-->
              <form action ="#" method="POST">
                 <article class="formflex">
                     <label>Fra</label>
-                    <select id="fra">
+                    <select id="fra" required>
+                     <option value="" disabled selected>Velg</option>   
                      <option value="1">Oslo Lufthavn</option>
                      <option value="2">Torp Sandefjord Lufthavn</option>
                      <option value="3">Bergen Lufthavn</option>
@@ -88,7 +94,8 @@
                  
                 <article class="formflex">
                     <label>Til</label>
-                    <select id="til">
+                    <select id="til" required>
+                     <option value="" disabled selected>Velg</option>   
                      <option value="1">Albania</option>
                      <option value="2">Danmark</option>
                      <option value="3">Finland</option>
@@ -98,7 +105,8 @@
                
                 <article class="formflex">
                     <label>Reiselenge</label>
-                    <select id="reiselengde">
+                    <select id="reiselengde" required>
+                     <option value="" disabled selected>Velg</option>   
                      <option value="1">Mindre enn 1 uke</option>
                      <option value="2">1 uke</option>
                      <option value="3">2 uker</option>
@@ -122,15 +130,14 @@
     </header>
 
     <main>
-
         <section id="index-two">
             <img src="img/holiday-2733322_1280.jpg" alt="Woman in pool" id="womanpool">
             <article>
                 <h2>Bestill sommerens beste uke</h2>
                 <p>Fly + hotell, 7 dager</p>
                 <p class="thick">Fra 3298,-</p>
+                <a href="hotell.html" id="button1">Bestill idag</a>
             </article>
-            <button>Bestill i dag</button>
         </section>
 
         <section id="index-three">
@@ -157,44 +164,44 @@
                 <img src="img/beach-6514331_640.jpg" alt="greek island">
                 <h4 class="overlayh4">Ukens Deal</h4>
                 <h3>Greske favoritter</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at elit eget purus vest</p>
-                <a href><p>Fra kr 3 970</p></a>
+                <p class="air">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at elit eget purus vest</p>
+                <a href><p>Fra kr 3 970 <i class="fa-solid fa-arrow-right"></i></p></a>
             </article>
 
             <article>
                 <img src="img/beach-1836467_640.jpg" alt="people playing in the water at beach">
                 <h3>Solskinnspriser - bestill i dag!</h3>
-                <p>ras sapien massa, tincidunt sed feugiat id, iaculis non mauris.</p>
-                <a href><p>Fra kr 3 203</p></a>
+                <p class="air">ras sapien massa, tincidunt sed feugiat id, iaculis non mauris.</p>
+                <a href><p>Fra kr 3 203 <i class="fa-solid fa-arrow-right"></i></p></a>
             </article>
 
             <article>
                 <img src="img/cathedral-427997_640.jpg" alt="cathedral in big town">
                 <h3>Storbyferie</h3>
-                <p>Donec euismod condimentum felis, sit amet efficitur enim condimentum vitae. Praesent eu enim vulputate, mattis ante non.</p>
-                <a href><p>Les mer</p></a>
+                <p class="air">Donec euismod condimentum felis, sit amet efficitur enim condimentum vitae. Praesent eu enim vulputate, mattis ante non.</p>
+                <a href><p>Les mer <i class="fa-solid fa-arrow-right"></i></p></a>
             </article>
 
             <article>
                 <img src="img/building-7014904_640.jpg" alt="london bridge">
                 <h3>Besøk påskefavoritten London</h3>
-                <p>Aliquam ante ipsum, pellentesque at nibh a, pharetra semper purus. Cras id feugiat est, eu porttitor eros. </p>
-                <a href><p>Fra kr 2 150</p></a>
+                <p class="air">Aliquam ante ipsum, pellentesque at nibh a, pharetra semper purus. Cras id feugiat est, eu porttitor eros. </p>
+                <a href><p>Fra kr 2 150 <i class="fa-solid fa-arrow-right"></i></p></a>
             </article>
 
             <article>
                 <img src="img/ski-slope-3223709_640.jpg" alt="person skiing">
                 <h4 class="overlayh4">Nyhet</h4>
                 <h3>Greske favoritter</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at elit eget purus vest</p>
-                <a href><p>Se alle skistedene</p></a>
+                <p class="air">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at elit eget purus vest</p>
+                <a href><p>Se alle skistedene <i class="fa-solid fa-arrow-right"></i></p></a>
             </article>
             
             <article>
                 <img src="img/beach-666122_640.jpg" alt="beach hut with blue water around">
                 <h3>Spar opptil 7000,- til sommer</h3>
-                <p>Aliquam ante ipsum, pellentesque at nibh a, pharetra semper purus. Cras id feugiat est, eu porttitor eros. </p>
-                <a href><p>Les mer</p></a>
+                <p class="air">Aliquam ante ipsum, pellentesque at nibh a, pharetra semper purus. Cras id feugiat est, eu porttitor eros. </p>
+                <a href><p>Les mer <i class="fa-solid fa-arrow-right"></i></p></a>
             </article>
         </section>  
     </main>

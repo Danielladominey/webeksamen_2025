@@ -37,13 +37,14 @@
                         </ul>
                     </section>
                        
-                    
+                    <!--Brukt chatgpt til å få svar på hvordan jeg kan få en link til å poppe opp i et annet vindu, denne informasjonen har jeg brukt på alle stedene jeg har ønsket det
+                    og det ligger prompt i eksamensdokument-->
                     <section id="desktopnav2">
                         <a href="index.html"><img src="img/fav.png" id="logo2" alt="logo"></a>
                     <ul id="desktopul2">
                         <li><a href="index.html#index-four">Tips og inspirasjon</a></li>
                         <li> <a href="hotell.html">Hotell</a></li>
-                        <li> <a href="https://www.norwegian.no/">Fly</a></li>
+                        <li> <a href="https://www.norwegian.no/" target="_blank">Fly</a></li>
                         <li> <a href="#flags">Kontakt</a></li>
                     </ul> 
                     </section>
@@ -52,21 +53,63 @@
 
     </header>
 
-    <main id="ordermain">
+    <main>
         <section id="orderone">
             <ul>
-                <li>Søk ></li>
-                <li>Søkeresultater ></li>
-                <li>Romtype ></li>
-                <li>Fly ></li>
-                <li>Tilegg ></li>
+                
+                <li><a href="index.html#index-one">Søk <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="hotell.html">Søkeresultater <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="hotell.html#velgrom">Romtype <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="https://www.norwegian.no/" target="_blank">Fly <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="">Tillegg <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="order.html" id="opplysning">Opplysninger <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="#sistetrinn">Bestill <i class="fa-solid fa-chevron-right"></i></a></li>
             </ul>
         </section>
 
         <div id="container">
 
             <section id="ordertwo">
-                <h2 id="dinevalg">Dine valg ></h2>
+                <details>
+                    <summary><h2 id="dinevalg">Dine valg ></h2></summary>
+
+                    <section id="detail">
+                        <article class="booking1">
+                            <img src="img/landscape-2016308_640.jpg" id="orderpic2" alt="sun chairs by pool">
+                            <h3>Parga Beach</h3>
+        
+                            <ul id="sun1">
+                                <li>
+                                    <i class="fa-solid fa-sun"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-sun"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-sun"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-sun"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-sun"></i>
+                                </li>
+                            </ul>
+        
+                            <ul id="orderul1">
+                                <li><i class="fa-solid fa-location-dot"></i>Hellas, Parga</li>
+                                <li><i class="fa-regular fa-calendar"></i>Man 5. mai -12. mai 2025</li>
+                                <li><i class="fa-regular fa-user"></i>2 Voksne</li>
+                                <li><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt</li>
+                                <li><i class="fa-solid fa-utensils"></i>Frokostbuffè</li>
+                                <li><i class="fa-solid fa-plane-departure"></i>Oslo Lufthavn -- Preveza</li>
+                                <li>22 003,-</li>
+                                <li>19 803,-</li>
+                            </ul>
+                        </article>
+                    </section>
+                </details>
+                
                 <h1>Oppgi dine bestillingsopplysninger</h1>
     
                 <form id="orderform">
