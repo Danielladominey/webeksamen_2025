@@ -1284,7 +1284,7 @@ footer  {
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 2%;
-        padding-right: 2%;
+       
 
 
         /*brukt chatgpt til å finne ut av hvordan jeg kan ta et element over hele vidden når man er i en flexbox med flexwrap. Prompt står i eksamensdokument */
